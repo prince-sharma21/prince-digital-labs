@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Prince Digital Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" type="image/png" href="/images/favicon-32.png">
+</head>
+<body class="admin-body">
+  <div class="login-wrap">
+    <div class="login-card">
+      <div class="brand-mark" style="width:44px;height:44px;font-size:1.1rem;">PD</div>
+      <h1>Prince Digital Labs</h1>
+      <p class="lede">Admin sign in</p>
+
+      <div class="form-error-box" id="errorBox"></div>
+
+      <form id="loginForm">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="username">
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+        <div class="form-field hidden" id="totpField">
+          <label for="totp">Authentication code</label>
+          <input type="text" id="totp" name="totp" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;" id="submitBtn">Sign in</button>
+      </form>
+      <p style="text-align:center;margin-top:16px;font-size:0.85rem;">
+        <a href="request-reset.html" style="color:var(--primary);">Forgot password?</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="toast-region"></div>
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — Prince Digital Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" type="image/png" href="/images/favicon-32.png">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="sidebar">
+      <div class="admin-brand">
+        <span class="brand-mark">PD</span>
+        <span>Prince Digital Labs</span>
+      </div>
+      <nav class="admin-nav" id="navList"><!-- populated by app.js --></nav>
+      <div class="admin-user-box">
+        <div id="userName">—</div>
+        <div class="role-pill" id="userRole">—</div>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn" style="border-color:var(--dark-line);color:#fff;">Log out</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <button class="btn btn-ghost btn-sm admin-mobile-toggle" id="mobileToggle">☰ Menu</button>
+        <h1 id="sectionTitle">Overview</h1>
+      </div>
+      <div id="content"><!-- populated by app.js --></div>
+    </main>
+  </div>
+
+  <div id="modal-region"></div>
+  <div id="toast-region"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/resource.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

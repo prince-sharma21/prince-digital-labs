@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset Password — Prince Digital Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" type="image/png" href="/images/favicon-32.png">
+</head>
+<body class="admin-body">
+  <div class="login-wrap">
+    <div class="login-card">
+      <h1>Reset your password</h1>
+      <p class="lede">Enter your admin email and we'll send a reset link, if that account exists.</p>
+      <div class="form-success" id="successBox">
+        <strong>Check your email.</strong> If that address has an account, a reset link is on its way.
+      </div>
+      <form id="requestForm">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required autocomplete="username">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send reset link</button>
+      </form>
+      <p style="text-align:center;margin-top:16px;font-size:0.85rem;">
+        <a href="login.html" style="color:var(--primary);">Back to sign in</a>
+      </p>
+    </div>
+  </div>
+  <script src="js/request-reset.js"></script>
+</body>
+</html>

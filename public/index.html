@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Digital Labs — Websites, Digital Marketing &amp; AI Automation</title>
+<meta name="description" content="Prince Digital Labs builds websites, runs digital marketing and SEO, and automates business workflows with AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" href="/images/favicon-180.png">
+</head>
+<body data-page="index.html">
+<div id="notification-bar"></div>
+<div id="site-header"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero section-dark">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Websites · Marketing · AI Automation</div>
+      <h1 style="color:#fff;">Digital work that turns signal into growth.</h1>
+      <p class="lede">We build fast, modern websites and run the marketing, SEO, and AI automation behind them — so your business shows up, converts, and keeps running smoothly.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-accent">Get Started</a>
+        <a href="portfolio.html" class="btn btn-ghost">See our work</a>
+      </div>
+      <div class="hero-stats-note">// built on real code, real content, no filler</div>
+    </div>
+    <div class="signal-wrap">
+      <svg class="signal-svg" viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A jagged signal resolving into a smooth rising growth curve">
+        <defs>
+          <linearGradient id="signalGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#2A5EF5"/>
+            <stop offset="100%" stop-color="#FF7A1A"/>
+          </linearGradient>
+        </defs>
+        <polyline class="signal-path-noise" points="10,220 35,180 55,240 80,160 100,210 125,150 145,205 170,170 190,225 215,190" />
+        <path class="signal-path-smooth" d="M215,190 C260,150 300,230 340,150 C380,80 420,60 465,40" />
+        <circle class="signal-dot" cx="465" cy="40" r="6" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES PREVIEW ============ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow center">What we do</div>
+    <h2 class="center">Everything your digital presence needs</h2>
+    <p class="lede center" style="margin: 0 auto var(--space-6);">From your first website to the automation that runs behind the scenes.</p>
+    <div class="grid grid-3" id="servicesPreview"></div>
+    <div style="text-align:center;margin-top:var(--space-5);"><a href="services.html" class="btn btn-ghost">View all services</a></div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section section-tight" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container grid grid-3">
+    <div class="reveal">
+      <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h3>Honest, no-fluff work</h3>
+      <p>No invented results, no fake guarantees — just clear scopes and real deliverables.</p>
+    </div>
+    <div class="reveal">
+      <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <h3>Fast, modern builds</h3>
+      <p>Clean code, mobile-first design, and performance that doesn't slow your visitors down.</p>
+    </div>
+    <div class="reveal">
+      <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 1 5 5v3a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3"/></svg></div>
+      <h3>Automation that saves time</h3>
+      <p>We build the AI workflows that take repetitive work off your plate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow center">How we work</div>
+    <h2 class="center" style="margin-bottom:var(--space-6);">A clear five-step process</h2>
+    <div class="process-row" id="processRow"></div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO PREVIEW ============ -->
+<section class="section section-tight" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="eyebrow center">Our work</div>
+    <h2 class="center" style="margin-bottom:var(--space-6);">A look at what we build</h2>
+    <div class="grid grid-3" id="portfolioPreview"></div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow center">What clients say</div>
+    <h2 class="center" style="margin-bottom:var(--space-6);">Client testimonials</h2>
+    <div id="testimonialsWrap"></div>
+  </div>
+</section>
+
+<!-- ============ BLOG PREVIEW ============ -->
+<section class="section section-tight" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);" id="blogPreviewSection">
+  <div class="container">
+    <div class="eyebrow center">From the blog</div>
+    <h2 class="center" style="margin-bottom:var(--space-6);">Latest posts</h2>
+    <div class="grid grid-3" id="blogPreview"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <div class="eyebrow center">Questions</div>
+    <h2 class="center" style="margin-bottom:var(--space-5);">Frequently asked questions</h2>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section-dark" style="padding:var(--space-7) 0;">
+  <div class="container center" style="max-width:640px;">
+    <h2 style="color:#fff;">Ready to get started?</h2>
+    <p class="lede center" style="margin:0 auto var(--space-5);">Tell us about your business and what you need — we'll follow up with the right plan.</p>
+    <a href="contact.html" class="btn btn-accent">Get Started</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="js/site.js"></script>
+<script src="js/pages/home.js"></script>
+</body>
+</html>

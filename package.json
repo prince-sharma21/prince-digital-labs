@@ -1,0 +1,36 @@
+{
+  "name": "prince-digital-labs",
+  "version": "1.0.0",
+  "engines": {
+    "node": "20.18.1"
+  },
+  "description": "Prince Digital Labs — full-stack website with CMS admin dashboard.",
+  "private": true,
+  "type": "commonjs",
+  "main": "server/index.js",
+  "scripts": {
+    "migrate": "node server/migrate.js",
+    "seed": "node server/seed.js",
+    "setup": "npm run migrate && npm run seed",
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test:api": "node tests/api.test.js",
+    "test:ui": "node tests/admin-ui.test.js",
+    "test:public": "node tests/public-ui.test.js",
+    "test": "npm run test:api && npm run test:ui && npm run test:public"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "multer": "^2.0.1",
+    "pg": "^8.23.0",
+    "sanitize-html": "^2.13.0"
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  }
+}
